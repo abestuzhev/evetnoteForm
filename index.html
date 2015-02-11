@@ -6,33 +6,55 @@
 	<link rel="stylesheet" href="style.css">
 </head>
 <body>
-	<div class="header">
-		<h1>Войти в систему</h1>
-	</div>
-	<div class="form-wrapper">
-		<div class="modal">
-			<form action="action.php">
-				<ol>
-					<li>
-						<label for="">Адрес e-mail или имя пользователя</label>
-						<div><input type="text" placeholder=""></div>
-					</li>
-					<li>
-						<label for="">Пароль</label>
-						<div><input type="password" placeholder=""></div>
-					</li>
-					<li>
-						<div><input id="check" type="checkbox"><label for="check">Запомнить на неделю</label></div>
-					</li>
-					<li>
-						<label for=""></label>
-						<div><input class="submit" type="submit" value="Войти"></div>
-					</li>
-				</ol>
-				<a href="#">Забыли пароль?</a>
-			</form>	
+	<!-- BEGIN main ==================================================================== -->
+	<div class="main">
+		<!-- BEGIN header ====================== -->
+		<div class="header">
+			<div class="logo"></div>
+			<h1>Войти в систему</h1>
+
 		</div>
-		
+		<!-- END header ====================== -->
+
+		<!-- BEGIN form-wrapper ====================== -->
+		<div class="form-wrapper">
+			<!-- BEGIN modal ====================== -->
+			<div class="modal">
+				<form action="action.php"> <!-- start form -->
+					<ol>
+						<li>
+							<label for="">Адрес e-mail или имя пользователя</label>
+							<div><input type="text" placeholder=""></div>
+						</li>
+						<li class="password-wrap">
+							<label for="">Пароль</label>
+							<div><input type="password" placeholder=""></div>
+						</li>
+						<li>
+							<div><input id="check" type="checkbox"><label for="check">Запомнить на неделю</label></div>
+						</li>
+						<li>
+							<label for=""></label>
+							<div><input class="submit" type="submit" value="Войти"></div>
+						</li>
+					</ol>
+					<a href="#">Забыли пароль?</a>
+				</form>	<!-- end form -->
+			</div>
+			<!-- END modal ====================== -->
+			<div class="t-pico">У вас нет аккаунта?</div>
+			<div class="switch"><a href="#">Создать аккаунт</a></div>
+		</div>
+		<!-- END form-wrapper ====================== -->
 	</div>
+	<!-- END main ==================================================================== -->
+
+	<!-- BEGIN footer ======================================== -->
+	<div class="footer">
+		<a href="#">Условия обслуживания</a>
+		<a href="#">Конфиденциальность</a>
+		<span> Copyright 2015 Evernote Corporation. Все права защищены.</span>
+	</div>
+	<!-- END footer ======================================== -->
 </body>
 </html>
